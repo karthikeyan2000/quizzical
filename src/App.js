@@ -2,13 +2,36 @@ import './App.css';
 import Start from "./Start";
 import Trivia from "./Trivia";
 import Result from "./Result";
+import {useState} from "react";
 
 function App() {
+    const [nav, setNav] = useState(1);
+    const [questions, setQuestions] = useState([])
+
+    function handleStartClick() {
+        setNav(2);
+    }
+
+    function handleTriviaClick(e, q) {
+        setQuestions(q)
+        setNav(3);
+    }
+
+    function getNav() {
+        if(nav === 1) {
+            return <Start handleStartClick={handleStartClick}/>;
+        } else if(nav === 2) {
+            return <Trivia handleTriviaClick={handleTriviaClick}/>;
+        } else {
+            return <Result questions={questions}/>;
+        }
+    }
+
   return (
     <div className="App">
-      <Start />
-      <Trivia />
-      <Result />
+        <div className="blob-top" />
+        <div className="blob-bottom" />
+        {getNav()}
     </div>
   );
 }

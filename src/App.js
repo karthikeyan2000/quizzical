@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import Start from "./Start";
+import Trivia from "./Trivia";
+import Result from "./Result";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Start />
+      <Trivia />
+      <Result />
     </div>
   );
 }
 
 export default App;
+
+// Manifest.json icons format
+//    {
+//      "src": "favicon.ico",
+//      "sizes": "64x64 32x32 24x24 16x16",
+//      "type": "image/x-icon"
+//    },
+//    {
+//      "src": "logo192.png",
+//      "type": "image/png",
+//      "sizes": "192x192"
+//    },
+//    {
+//      "src": "logo512.png",
+//      "type": "image/png",
+//      "sizes": "512x512"
+//    }

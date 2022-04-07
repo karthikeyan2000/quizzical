@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Quizzical
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple trivia app to play at your leisure. You get an assorted questions 5 at a time. You can check your score after submitting.
 
 ## Screenshots:
 <img src="page1.png" width="300px" alt="page1"><img src="page2.png" width="300px" alt="page2"><img src="page3.png" width="300px" alt="page3">

@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Screenshots:
-[[page1.png|width=650px]]
+[[https://github.com/karthikeyan2000/quizzical/blob/master/page1.png|width=650px]]
 ![page1](page1.png|width=650px)
 ![page2](page2.png|width=650px)
 ![page3](page3.png|width=650px)

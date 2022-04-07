@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Screenshots:
-<img src="page1.png" width="300px" alt="page1"><img src="page2.png" width="300px" alt="page2"><img src="page3.png" width="300px" alt="page3">
+<img src="page1.png" width="400px" alt="page1"><img src="page2.png" width="400px" alt="page2"><img src="page3.png" width="400px" alt="page3">
 
 ## Available Scripts
 

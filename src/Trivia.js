@@ -1,6 +1,5 @@
 import QuestionBlock from "./QuestionBlock";
 import {useEffect, useState} from "react";
-import { v4 as uuidv4 } from 'uuid';
 
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
@@ -28,13 +27,14 @@ function Trivia(props) {
             .then(r => r.json())
             .then(r => {
                 const q = r.results;
+                let i = 0
                 setQuestions(() => {
                     return q.map((value) => {
                         let choices = value.incorrect_answers
                         choices.push(value.correct_answer)
                         choices = shuffle(choices)
                         return {
-                            uuid: uuidv4(),
+                            uuid: i++,
                             question: value.question,
                             choices: choices,
                             correct_answer: choices.findIndex((c) => c === value.correct_answer),
